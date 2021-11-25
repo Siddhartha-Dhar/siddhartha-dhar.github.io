@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two&family=Roboto+Mono:wght@300;400&display=swap');
+
+body {
+    /*background-color: #010005;*/
+    background-image: linear-gradient(to right, #070024 , #010005);
+}
+
+.baseImg {
+    max-width: 100%;
+}
+
+hr {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#dpSett {
+    border-radius: 190px;
+    height: 15em;
+    border-color: black;
+    border-style: solid;
+    border-width: 10px;
+    display: block;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+}
+.quotes{
+    font-family: 'Lobster', cursive, serif;
+    color: white;
+    font-size: 30px;
+    text-align: center;    
+}
+.headingContent {
+    font-family: 'lobster', serif;
+    font-size: 35px;
+    text-align: center;
+    color: white;
+}
+.paraContent {
+    font-family: 'Roboto Mono', monospace, serif;
+    width: 80%;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+.descp {
+    font-family: 'Roboto Mono', monospace, serif;
+    
+    color: white;
+    font-size: 20px;
+}
+
+.foot {
+    font-family: 'Roboto Mono', monospace, serif;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+}
+.logoFormat {
+    height: 4em;
+    width: auto;
+    justify-content:space-around;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+table{
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ulp {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image:linear-gradient(to right,#3695c8,#04011F);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    border-radius: 5px;
+      font-family: cursive;
+  }
+  
+  .lip {
+    float: left;
+  }
+  
+  .lia {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 7px 12px;
+    text-decoration: none;
+    font-family: 'Roboto Mono', monospace, serif;
+    font-size: 20px;
+  }
+  
+  .lia:hover {
+    background-color: #111;
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  .skill-bars{
+    padding: 25px 30px;
+    width: 30%;
+    background-image:linear-gradient(to right, #080019, #010005);
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+    border-radius: 10px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .skill-bars .bar{
+    margin: 20px 0;
+  }
+  .skill-bars .bar:first-child{
+    margin-top: 0px;
+  }
+  .skill-bars .bar .info{
+    margin-bottom: 5px;
+  }
+  .skill-bars .bar .info span{
+    font-weight: 500;
+    font-size: 17px;
+    opacity: 0;
+    animation: showText 0.5s 1s linear forwards;
+  }
+  @keyframes showText {
+    100%{
+      opacity: 1;
+    }
+  }
+  .skill-bars .bar .progress-line{
+    height: 10px;
+    width: 100%;
+    background: #adabaa;
+    position: relative;
+    transform: scaleX(0);
+    transform-origin: left;
+    border-radius: 10px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+                0 1px rgba(255,255,255,0.8);
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+      float: left;
+  }
+  @keyframes animate {
+    100%{
+      transform: scaleX(1);
+    }
+  }
+  .bar .progress-line span{
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background-image:linear-gradient(to right,#edd09e , #f9269b) ;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+  }
+  .bar .progress-line.C span{
+    width: 95%;
+  }
+  .bar .progress-line.Python span{
+    width: 60%;
+  }
+  .bar .progress-line.java span{
+    width: 85%;
+  }
+  .bar .progress-line.SQL span{
+    width: 80%;
+  }
+  .bar .progress-line.html span{
+    width: 90%;
+  }
+  .bar .progress-line.css span{
+    width: 60%;
+  }
+  .bar .progress-line.js span{
+    width: 45%;
+  }
+  .bar .progress-line.bash span{
+    width: 75%;
+  }
+  .progress-line span::before{
+    position: absolute;
+    content: "";
+    top: -10px;
+    right: 0;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+  }
+  .progress-line span::after{
+    position: absolute;
+    top: -28px;
+    right: 0;
+    font-weight: 500;
+    background: #000;
+    color: #fff;
+    padding: 1px 8px;
+    font-size: 12px;
+    border-radius: 3px;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+  }
+  @keyframes showText2 {
+    100%{
+      opacity: 1;
+    }
+  }
+  .progress-line.C span::after{
+    content: "95%";
+  }
+  .progress-line.Python span::after{
+    content: "60%";
+  }
+  .progress-line.java span::after{
+    content: "85%";
+  }
+  .progress-line.SQL span::after{
+    content: "80%";
+  }
+  .progress-line.html span::after{
+    content: "90%";
+  }
+  .progress-line.css span::after{
+    content: "60%";
+  }
+  .progress-line.js span::after{
+    content: "45%";
+  }
+  .progress-line.bash span::after{
+    content: "75%";
+  }
